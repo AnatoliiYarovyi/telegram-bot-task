@@ -1,4 +1,3 @@
-// databaseAPI.createUser(userName);
 const axios = require('axios');
 const { TELEGRAM_URL } = process.env;
 
