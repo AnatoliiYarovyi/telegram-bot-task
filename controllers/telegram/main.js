@@ -24,12 +24,12 @@ const main = async (req, res, next) => {
         listRecentCommand(res, chatId);
         break;
 
-      case `/${await getSymbolCoin(text)}`:
-        currencySymbolCommand(res, chatId, text);
-        break;
-
       case `/listFavourite`:
         listFavouriteCommand(res, chatId, text);
+        break;
+
+      case `/${await getSymbolCoin(text)}`:
+        currencySymbolCommand(res, chatId, text);
         break;
 
       default:
